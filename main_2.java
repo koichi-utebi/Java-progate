@@ -110,6 +110,53 @@ class Main {
       }
       System.out.println(j);
     }
+    // 変数namesに、配列を代入してください
+    String[] names = {"にんじゃわんこ", "ひつじ仙人", "ベイビーわんこ" };
     
+    // インデックス番号が0の要素を出力してください
+    System.out.println(names[0]);
+    
+    // インデックス番号が2の要素を出力してください
+    System.out.println(names[2]);
+    
+    // 変数languagesを定義し、配列を代入してください
+    String[] languages = {"Ruby", "PHP", "Python"};
+    
+    // インデックス番号が「1」の要素を出力してください
+    System.out.println(languages[1]);
+    
+    // インデックス番号が「1」の要素を「Java」で上書きしてください
+    languages[1] = "Java";
+    
+    // インデックス番号が「1」の要素を出力してください
+    System.out.println(languages[1]);
+    
+    // for文を用いて、「私の名前は◯◯です」と出力してください
+    for (int i = 0; i < names.length; i++) {
+      System.out.println("私の名前は" + names[i] + "です");
+    }
+    
+    for (String name: names) {
+      System.out.println("私の名前は" + name + "です");
+    }
+    
+    // 変数numbersに、与えられた数字の配列を代入してください
+    int[] numbers = {1, 4, 6, 9, 13, 16};
+    
+    int oddSum = 0;
+    int evenSum = 0;
+    
+    // for文を用いて、配列numbersの偶数の和と奇数の和を求めてください
+    for (int number: numbers) {
+      if(number % 2 == 0) {
+        evenSum += number;
+      } else {
+        oddSum += number;
+      };
+    }
+
+    System.out.println("奇数の和は" + oddSum + "です");
+    System.out.println("偶数の和は" + evenSum + "です");
+  }
   }
 }
